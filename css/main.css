@@ -85,7 +85,7 @@ nav .profile-link a {
 /* Hero */
 
 body {
-  background-color: red;
+  height: 100vh;
   background-image: url(https://i.ibb.co/xYCKLhS/Cover-tiny.png);
   background-position: center 0px;
   background-size: cover;
