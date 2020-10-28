@@ -82,39 +82,23 @@ nav .profile-link a {
   font-size: 2rem;
 }
 
-/* Hero */
-
-body {
-  height: 100vh;
-  background-image: url(https://i.ibb.co/xYCKLhS/Cover-tiny.png);
-  background-position: center 0px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.hero {
-  position: relative;
-  top: -90px;
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.home-main section {
+  display: grid;
+  grid-column: 2;
   justify-content: center;
+  height: 350px;
 }
 
-.hero p {
-  color: white;
-  font-size: 4rem;
-  width: 60%;
+.home-main-text {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: black;
   text-align: center;
-  margin-bottom: 20px;
-}
-
-.hero-button {
-  padding: 15px;
-  background-color: #47cfac;
-  border: none;
-  font-weight: bold;
-  border: 1px solid #369980;
-  font-size: 1.5rem;
 }
