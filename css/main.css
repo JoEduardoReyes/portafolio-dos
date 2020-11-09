@@ -6,6 +6,7 @@
 
 :root {
   --main-green-color: #47cfac;
+  --main-grey-color: #e6e9ed;
 }
 
 body {
@@ -126,3 +127,33 @@ nav .profile-link a {
 }
 
 /* Blogs Page */
+
+.blogs-main {
+  display: grid;
+}
+
+.blogs-news-container {
+  background-color: var(--main-grey-color);
+  padding: 0 50px 40px;
+}
+
+.blogs-main-news {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+
+.blogs-news-img-container {
+  grid-column: 1;
+}
+
+.blogs-news-img-container img {
+}
+
+.blogs-news-info-container {
+  grid-column: 2;
+}
+
+.blogs-news-container p {
+  margin-bottom: 35px;
+}
