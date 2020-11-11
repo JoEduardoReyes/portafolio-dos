@@ -126,3 +126,18 @@ nav .profile-link a {
 }
 
 /* Blogs Page */
+
+.blogs-main {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.blogs-news-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 800px;
+}
+
+.blogs-main-news .blogs-news-img-container img {
+  width: 80%;
+}
