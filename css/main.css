@@ -143,17 +143,29 @@ nav .profile-link a {
 
 .hero-main-post {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   margin-top: 20px;
 }
 
 .hero-main-post img {
-  width: 80%;
+  width: 90%;
+  grid-column: 1 / 3;
 }
 
 .hero-post-text {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.hero-post-text h3 {
+  font-size: 4rem;
+}
+
+.hero-post-text a {
+  font-size: 1.4rem;
+  border: solid 1px var(--main-green-color);
+  width: 30%;
+  padding: 10px;
 }
