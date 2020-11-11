@@ -185,23 +185,34 @@ nav .profile-link a {
 }
 
 .hr-posts {
-  margin-top: 20px;
-  margin-bottom: 10px;
   border: 1px solid var(--main-grey-color);
 }
 
 .posts-list {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 400px);
   gap: 40px;
 }
 
 .posts-list article {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .posts-list article img {
   width: auto;
   max-width: 100%;
+}
+
+.posts-list article h3 {
+  margin-top: 10px;
+}
+
+.posts-list article a {
+  border: solid 1px var(--main-green-color);
+  padding: 10px;
 }
