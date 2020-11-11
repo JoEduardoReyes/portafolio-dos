@@ -141,6 +141,7 @@ nav .profile-link a {
 .hero-container {
   width: auto;
   max-width: 980px;
+  min-width: 800px;
   margin: 0 auto;
 }
 
@@ -174,7 +175,9 @@ nav .profile-link a {
 }
 
 .posts {
-  width: 980px;
+  width: auto;
+  max-width: 980px;
+  min-width: 800px;
   margin: 20px auto;
 }
 
@@ -193,7 +196,8 @@ nav .profile-link a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 400px);
-  gap: 40px;
+  column-gap: 5%;
+  row-gap: 50px;
 }
 
 .posts-list article {
@@ -215,4 +219,16 @@ nav .profile-link a {
 .posts-list article a {
   border: solid 1px var(--main-green-color);
   padding: 10px;
+}
+
+footer {
+  margin-top: 80px;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-black-color);
+  color: white;
+  border-top: solid 30px var(--main-green-color);
 }
