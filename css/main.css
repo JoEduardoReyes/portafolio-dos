@@ -17,6 +17,7 @@ body {
   left: 0;
   right: 0;
   font-family: "Roboto Mono", monospace;
+  font-size: 1.6rem;
 }
 
 html {
@@ -128,3 +129,31 @@ nav .profile-link a {
 }
 
 /* Blogs Page */
+
+.hero {
+  background-color: var(--main-grey-color);
+  padding: 40px 0;
+}
+
+.hero-container {
+  width: auto;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.hero-main-post {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 20px;
+}
+
+.hero-main-post img {
+  width: 80%;
+}
+
+.hero-post-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
