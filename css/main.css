@@ -11,13 +11,16 @@
 }
 
 body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.6rem;
+}
+
+.body-main {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.6rem;
 }
 
 html {
@@ -168,4 +171,37 @@ nav .profile-link a {
   border: solid 1px var(--main-green-color);
   width: 30%;
   padding: 10px;
+}
+
+.posts {
+  width: 980px;
+  margin: 20px auto;
+}
+
+.posts .posts-title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.hr-posts {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid var(--main-grey-color);
+}
+
+.posts-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.posts-list article {
+  border: 1px solid red;
+}
+
+.posts-list article img {
+  width: auto;
+  max-width: 100%;
 }
