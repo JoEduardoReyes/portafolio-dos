@@ -243,3 +243,37 @@ footer p {
   margin: 10px 0;
   font-size: 1.8rem;
 }
+
+.contact-main-container {
+  display: flex;
+  background-color: var(--main-grey-color);
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+
+.contact-main-container img {
+  width: 100px;
+  height: auto;
+}
+
+.contact-left,
+.contact-right {
+  display: flex;
+  width: 30%;
+}
+
+.contact-left div,
+.contact-right div {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.contact-left div a,
+.contact-right div a {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  border-bottom: solid 1px black;
+}
