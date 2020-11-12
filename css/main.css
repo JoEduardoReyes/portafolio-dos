@@ -4,7 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-green-color: #47cfac;
+  --main-grey-color: #e6e9ed;
+  --main-black-color: #22272d;
+}
+
 body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.6rem;
+}
+
+.body-main {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -12,11 +23,17 @@ body {
   right: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 a {
   text-decoration: none;
   display: inline;
   color: black;
 }
+
+/* Header Home */
 
 header {
   width: 100%;
@@ -30,12 +47,176 @@ header .header-icons-container {
   background-color: #47cfac;
   justify-content: flex-end;
   align-items: center;
+  height: 50px;
+  display: grid;
+  background-color: var(--main-green-color);
+}
+  
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
 }
 
-header .header-icons-container .icons {
+nav .nav-logo-container {
+  margin-left: 50px;
+}
+
+nav .nav-logo-container img {
+  width: 220px;
+  margin-top: 10px;
+}
+
+nav .profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   margin-right: 50px;
 }
 
-header .icons span {
+nav .profile-link a {
+  color: black;
+  border-bottom: 1px solid black;
+  font-size: 2rem;
+}
+
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  background-image: url("https://i.ibb.co/xYCKLhS/Cover-tiny.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-main section {
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+
+.home-main-text {
+  font-size: 30px;
+  font-weight: 700px;
+  letter-spacing: 10px;
   color: white;
+  text-align: center;
+}
+
+.home-main-button {
+  width: 110px;
+  height: 50px;
+  background-color: var(--main-green-color);
+  display: grid;
+  align-items: center;
+}
+
+.home-main-button a {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* Blogs Page */
+
+.hero {
+  background-color: var(--main-grey-color);
+  padding: 40px 0;
+}
+
+.hero-container {
+  width: auto;
+  max-width: 980px;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-main-post {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 20px;
+}
+
+.hero-main-post img {
+  width: 90%;
+  grid-column: 1 / 3;
+}
+
+.hero-post-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero-post-text h3 {
+  font-size: 4rem;
+}
+
+.hero-post-text a {
+  font-size: 1.4rem;
+  border: solid 1px var(--main-green-color);
+  width: 30%;
+  padding: 10px;
+}
+
+.posts {
+  width: auto;
+  max-width: 980px;
+  min-width: 800px;
+  margin: 20px auto;
+}
+
+.posts .posts-title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.hr-posts {
+  border: 1px solid var(--main-grey-color);
+}
+
+.posts-list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  column-gap: 5%;
+  row-gap: 50px;
+}
+
+.posts-list article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.posts-list article img {
+  width: auto;
+  max-width: 100%;
+}
+
+.posts-list article h3 {
+  margin-top: 10px;
+}
+
+.posts-list article a {
+  border: solid 1px var(--main-green-color);
+  padding: 10px;
+}
+
+footer {
+  margin-top: 80px;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-black-color);
+  color: white;
+  border-top: solid 30px var(--main-green-color);
 }
